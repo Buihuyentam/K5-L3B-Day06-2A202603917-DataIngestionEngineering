@@ -1,0 +1,7 @@
+[
+  {"id":"q16","split":"test","question":"In section 5, what must happen when an overall or inactivity session timeout expires?","expected_answer":"The session must be terminated.","gold_page":67,"filter":{"section":"5. Session Management"}},
+  {"id":"q17","split":"test","question":"In section 6, what can happen to a “something you have” authentication factor?","expected_answer":"It may be lost, damaged, stolen, or cloned by an attacker.","gold_page":69,"filter":{"section":"6. Threats and Security Considerations"}},
+  {"id":"q18","split":"test","question":"In section 7, what is one factor a CSP should evaluate in a privacy risk assessment for records retention?","expected_answer":"The likelihood that records retention could create a privacy problem for the subscriber, such as loss of trust.","gold_page":77,"filter":{"section":"7. Privacy Considerations"}},
+  {"id":"q19","split":"test","question":"In section 8, how does the cited definition describe usability?","expected_answer":"The extent to which specified users can achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context.","gold_page":79,"filter":{"section":"8. Customer Experience Considerations"}},
+  {"id":"q20","split":"test","question":"In Appendix B, how must authentication keys exported or cloned to a sync fabric be stored?","expected_answer":"Only in encrypted form, using a key with at least the minimum security strength specified by the latest SP 800-131A revision.","gold_page":102,"filter":{"section":"Appendix B. Syncable Authenticators"}}
+]

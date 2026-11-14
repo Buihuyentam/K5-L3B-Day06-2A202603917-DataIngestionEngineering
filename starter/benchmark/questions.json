@@ -1,0 +1,221 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question_type": "policy-condition",
+    "question": "In section 2, what minimum authentication assurance level must federal agencies select when personal information is made available online?",
+    "expected_answer": "At least AAL2.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 15,
+    "evidence_quote": "Therefore, federal agencies SHALL select a minimum of AAL2 when personal information is made available online.",
+    "filter": {"section": "2. Authentication Assurance Levels"}
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question_type": "requirement",
+    "question": "At AAL2, what proof of control is required?",
+    "expected_answer": "Proof of possession and control of two distinct authentication factors using secure authentication protocols.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 17,
+    "evidence_quote": "Proof of possession and control of two distinct authentication factors through the use of secure authentication protocols is required.",
+    "filter": null
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question_type": "requirement",
+    "question": "What key property and phishing-resistance property does section 2 require for AAL3 authentication?",
+    "expected_answer": "A cryptographic authenticator with a non-exportable private key that provides phishing resistance.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 19,
+    "evidence_quote": "AAL3 authentication requires the use of a cryptographic authenticator with a non-exportable private key that provides phishing resistance.",
+    "filter": {"section": "2. Authentication Assurance Levels"}
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question_type": "threshold",
+    "question": "What is the minimum length for a password used as a single-factor authentication mechanism?",
+    "expected_answer": "15 characters.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 25,
+    "evidence_quote": "Verifiers and CSPs SHALL require passwords that are used as a single-factor authentication mechanism to be a minimum of 15 characters in length.",
+    "filter": null
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Which password composition rules must verifiers and CSPs not impose?",
+    "expected_answer": "They must not impose additional composition rules such as requiring mixtures of different character types.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 25,
+    "evidence_quote": "Verifiers and CSPs SHALL NOT impose other composition rules (e.g., requiring mixtures of different character types) for passwords.",
+    "filter": null
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question_type": "definition",
+    "question": "How does the guideline count Unicode code points when evaluating password length?",
+    "expected_answer": "Each Unicode code point counts as one character.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 25,
+    "evidence_quote": "Each Unicode code point SHALL be counted as a single character when evaluating password length.",
+    "filter": null
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question_type": "procedure",
+    "question": "After successful authentication, what should a verifier do with the retry count for authenticators that were used?",
+    "expected_answer": "It should reset the retry count.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 42,
+    "evidence_quote": "Following successful authentication at a given AAL, the verifier SHOULD reset the retry count of the authenticators that were used.",
+    "filter": null
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question_type": "procedure",
+    "question": "What must a CSP make available when a subscriber reports a suspected lost, stolen, or compromised physical authenticator?",
+    "expected_answer": "A mechanism to invalidate it immediately upon notification.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 41,
+    "evidence_quote": "The CSP SHALL provide a mechanism to invalidate1 the authenticator immediately upon notification from a subscriber",
+    "filter": null
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question_type": "definition",
+    "question": "How does the guideline define phishing resistance?",
+    "expected_answer": "The protocol prevents disclosure of authentication secrets and valid authenticator outputs to an impostor verifier without relying on claimant vigilance.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 46,
+    "evidence_quote": "phishing resistance is the ability of the authentication protocol to prevent the disclosure of authentication secrets and valid authenticator outputs to an impostor verifier",
+    "filter": null
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question_type": "definition",
+    "question": "What must the claimant do for an authentication process to demonstrate intent?",
+    "expected_answer": "Respond explicitly to each authentication or reauthentication request.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 48,
+    "evidence_quote": "An authentication process demonstrates intent if it requires the claimant to respond explicitly to each authentication or reauthentication request.",
+    "filter": null
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question_type": "scope",
+    "question": "In section 4, can a subscriber-provided authenticator be bound to an account?",
+    "expected_answer": "Yes, if it is acceptable to the CSP.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 54,
+    "evidence_quote": "Using a subscriber-provided authenticator that is acceptable to the CSP.",
+    "filter": {"section": "4. Authenticator Event Management"}
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question_type": "alternatives",
+    "question": "What are examples of ways a subscriber may recover an account after losing control of authenticators?",
+    "expected_answer": "Repeat part of identity proofing, use a prearranged recovery contact, or present recovery codes; an available bound authenticator may also be used.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 58,
+    "evidence_quote": "This may be accomplished by repeating portions of the identity proofing process, using a prearranged recovery contact, or presenting one or more recovery codes",
+    "filter": null
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question_type": "requirement",
+    "question": "What notification must follow an account recovery event?",
+    "expected_answer": "One or more notifications must be sent to the subscriber to help detect fraudulent account recovery.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 58,
+    "evidence_quote": "An account recovery event always causes one or more notifications to be sent to the subscriber to help detect the fraudulent use of account recovery.",
+    "filter": null
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question_type": "rationale",
+    "question": "In section 5, why is session management preferable to continually presenting credentials?",
+    "expected_answer": "Continual presentation has poor usability and can encourage workarounds that undermine authentication intent and obscure event freshness.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 64,
+    "evidence_quote": "Session management is preferable to the continual presentation of credentials, as the poor usability of continual presentation often creates incentives for workarounds",
+    "filter": {"section": "5. Session Management"}
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question_type": "requirement",
+    "question": "For browser cookies used in section 5 session maintenance, what transport security condition is required?",
+    "expected_answer": "They must be accessible only on secure (HTTPS) sessions.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 66,
+    "evidence_quote": "SHALL be tagged to be accessible only on secure (i.e., HTTPS) sessions.",
+    "filter": {"section": "5. Session Management"}
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question_type": "threshold",
+    "question": "What minimum false match rate must the biometric system meet for all demographic groups?",
+    "expected_answer": "An FMR of one in 10,000 or better.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 43,
+    "evidence_quote": "The biometric system SHALL operate with an FMR [ISO/IEC2382-37] of one in 10000 or better for all demographic groups.",
+    "filter": {"section": "3. Authenticator and Verifier Requirements"}
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question_type": "procedure",
+    "question": "In section 4, how must the subscriber be notified when a new authenticator is bound?",
+    "expected_answer": "Through a mechanism independent of the transaction that binds the new authenticator.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 55,
+    "evidence_quote": "When an authenticator is added, the CSP SHALL notify the subscriber via a mechanism independent of the transaction binding the new authenticator",
+    "filter": {"section": "4. Authenticator Event Management"}
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question_type": "procedure",
+    "question": "In section 5, what actions should the RP take when potential fraud is detected during a session?",
+    "expected_answer": "Act with the CSP, IdP, or verifier to reauthenticate, terminate the session, or notify appropriate support personnel.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 68,
+    "evidence_quote": "When potential fraud is detected during a session, the RP SHOULD act in conjunction with the CSP, IdP, or verifier to reauthenticate, terminate the session, or notify appropriate support personnel.",
+    "filter": {"section": "5. Session Management"}
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question_type": "usability",
+    "question": "In section 8, what should users be prompted to do shortly before an inactivity timeout?",
+    "expected_answer": "Perform some activity shortly before the timeout, for example two minutes before.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 82,
+    "evidence_quote": "Prompt users to perform some activity just before (e.g., two minutes before) an inactivity timeout would otherwise occur.",
+    "filter": {"section": "8. Customer Experience Considerations"}
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question_type": "requirement",
+    "question": "In section 4, what must a CSP do to recover an account at AAL3 when the account was identity-proofed at IAL3?",
+    "expected_answer": "Perform a successful biometric comparison against the biometric characteristic collected during initial on-site attended identity proofing.",
+    "gold_source_id": "nist-sp-800-63b-4",
+    "gold_page": 61,
+    "evidence_quote": "If an account that can authenticate at AAL3 has been identity-proofed at IAL3, the CSP SHALL successfully perform a successful biometric comparison against the biometric characteristic collected during an initial on-site attended identity proofing session",
+    "filter": {"section": "4. Authenticator Event Management"}
+  }
+]

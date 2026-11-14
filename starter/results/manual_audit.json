@@ -1,0 +1,696 @@
+{
+  "auditor": "AI-assisted review of the actual chunks and source evidence; labels are not an independent blind human annotation and should be confirmed by the student.",
+  "rubric": {
+    "coherence": "0=cut/unclear; 1=partly understandable or missing context; 2=self-contained.",
+    "grounding": "0=no useful support; 1=partial support; 2=sufficient evidence and context."
+  },
+  "coherence_sample_rule": "First content chunk on each of physical pages 12-21, chosen before scoring; same page-start location for A/B/C. Full chunk text is included.",
+  "coherence_summary": {
+    "A": {
+      "count": 10,
+      "mean": 1.0
+    },
+    "B": {
+      "count": 10,
+      "mean": 1.2
+    },
+    "C": {
+      "count": 10,
+      "mean": 1.2
+    }
+  },
+  "coherence_rows": [
+    {
+      "strategy": "A",
+      "source_page_physical": 12,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "78b135e59bd8b8c5b849c3f5d17b99fb66ca3036eb9181c88966accd1ffb3dca",
+      "chunk_text": "1. Introduction\n\nThis section is informative. Authentication is the process of determining the validity of one or more authenticators used to claim a digital identity by establishing that a subject attempting to access a digital service is in control of the secrets used to authenticate. If return visits are applicable to a service, successful authentication provides reasonable risk-based assurance that the subject accessing the service today is the same as the one who previously accessed the service. One-time services (i.e., the subscriber will only ever access the service once) do not necessarily require persistent digital authentication nor the issuance of authenticators. The",
+      "score_0_to_2": 1,
+      "reason": "The definition is readable, but the chunk ends with a dangling 'The'."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 12,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "038bf9aae9254f1dca54f7dc4db77fdd171d60caac9357ff0154210b3d67144a",
+      "chunk_text": "1. Introduction\n\nThis section is informative. Authentication is the process of determining the validity of one or more authenticators used to claim a digital identity by establishing that a subject attempting to access a digital service is in control of the secrets used to authenticate. If return visits are applicable to a service, successful authentication provides reasonable risk-based assurance that the subject accessing the service today is the same as the one who previously accessed the service. One-time services (i.e., the subscriber will only ever access the service once) do not necessarily require persistent digital authentication nor the issuance of authenticators. The authentication of claimants is central to the process of associating a subscriber with their online activity as recorded in their subscriber account, which is maintained by a credential service provider (CSP).",
+      "score_0_to_2": 2,
+      "reason": "Heading and definition form a complete, self-contained passage."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 12,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "038bf9aae9254f1dca54f7dc4db77fdd171d60caac9357ff0154210b3d67144a",
+      "chunk_text": "1. Introduction\n\nThis section is informative. Authentication is the process of determining the validity of one or more authenticators used to claim a digital identity by establishing that a subject attempting to access a digital service is in control of the secrets used to authenticate. If return visits are applicable to a service, successful authentication provides reasonable risk-based assurance that the subject accessing the service today is the same as the one who previously accessed the service. One-time services (i.e., the subscriber will only ever access the service once) do not necessarily require persistent digital authentication nor the issuance of authenticators. The authentication of claimants is central to the process of associating a subscriber with their online activity as recorded in their subscriber account, which is maintained by a credential service provider (CSP).",
+      "score_0_to_2": 2,
+      "reason": "Same paragraph-aware chunk as B; heading and definition form a complete passage."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 13,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "49d28157eaf89cb0b87890bc02bc390f6bd0399f8e7fba63311d302e1d728ec5",
+      "chunk_text": "at higher AALs can effectively reduce the risk of attacks. A high-level summary of the technical requirements for each of the AALs is provided below; see Sec. 2 and Sec. 3 of this document for specific normative requirements. Authentication Assurance Level 1: AAL1 provides basic confidence that the claimant controls an authenticator bound to the subscriber account being authenticated. AAL1 requires only single-factor authentication using a wide range of available authentication technologies. However, it is recommended that applications assessed at AAL1 offer multi-factor authentication options. Successful authentication requires the claimant to prove possession and control of the",
+      "score_0_to_2": 1,
+      "reason": "The summary begins mid-page and ends mid-clause after 'the'."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 13,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "34dd9b1565e29e5ab421d46e22bcaeb26c80bc72999ec65c928c31fae66b8242",
+      "chunk_text": "at higher AALs can effectively reduce the risk of attacks. A high-level summary of the technical requirements for each of the AALs is provided below; see Sec. 2 and Sec. 3 of this document for specific normative requirements. Authentication Assurance Level 1: AAL1 provides basic confidence that the claimant controls an authenticator bound to the subscriber account being authenticated. AAL1 requires only single-factor authentication using a wide range of available authentication technologies. However, it is recommended that applications assessed at AAL1 offer multi-factor authentication options. Successful authentication requires the claimant to prove possession and control of the authenticator. Authentication Assurance Level 2: AAL2 provides high confidence that the claimant controls one or more authenticators bound to the subscriber account being authenticated. Proof of the possession",
+      "score_0_to_2": 1,
+      "reason": "The summary starts mid-page and ends in a partial possession statement."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 13,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "34dd9b1565e29e5ab421d46e22bcaeb26c80bc72999ec65c928c31fae66b8242",
+      "chunk_text": "at higher AALs can effectively reduce the risk of attacks. A high-level summary of the technical requirements for each of the AALs is provided below; see Sec. 2 and Sec. 3 of this document for specific normative requirements. Authentication Assurance Level 1: AAL1 provides basic confidence that the claimant controls an authenticator bound to the subscriber account being authenticated. AAL1 requires only single-factor authentication using a wide range of available authentication technologies. However, it is recommended that applications assessed at AAL1 offer multi-factor authentication options. Successful authentication requires the claimant to prove possession and control of the authenticator. Authentication Assurance Level 2: AAL2 provides high confidence that the claimant controls one or more authenticators bound to the subscriber account being authenticated. Proof of the possession",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; it begins mid-page and ends mid-clause."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 14,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "069a8a7645d5ca4daf20670c0ed43dc327973437b8e8c87d65a64c500dcae7d5",
+      "chunk_text": "– The terms “ MAY ” and “ NEED NOT ” indicate a course of action permissible\n\nwithin the limits of the publication.\n\n– The terms “ CAN ” and “ CANNOT ” indicate a possibility and capability —\n\nwhether material, physical, or causal — or, in the negative, the absence of that possibility or capability. 1.2. Document Structure This document is organized as follows. Each section is labeled as either normative (i.e., mandatory for compliance) or informative (i.e., not mandatory).\n\n• Section 1 introduces the document. This section is informative.\n\n• Section 2 describes requirements for AALs. This section is normative.\n\n• Section 3 describes authenticator and verifier requirements. This section",
+      "score_0_to_2": 1,
+      "reason": "The notations and structure remain recognizable, but the final list item is cut."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 14,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "3f1df332b5f2b58e4a1d70c80c63fc8acee6a56e2c4d55b047b4cf493ef80778",
+      "chunk_text": "– The terms “ MAY ” and “ NEED NOT ” indicate a course of action permissible\n\nwithin the limits of the publication.\n\n– The terms “ CAN ” and “ CANNOT ” indicate a possibility and capability —\n\nwhether material, physical, or causal — or, in the negative, the absence of that possibility or capability. 1.2. Document Structure This document is organized as follows. Each section is labeled as either normative (i.e., mandatory for compliance) or informative (i.e., not mandatory).\n\n• Section 1 introduces the document. This section is informative.\n\n• Section 2 describes requirements for AALs. This section is normative.\n\n• Section 3 describes authenticator and verifier requirements. This section is\n\nnormative.\n\n• Section 4 describes requirements for authenticator event management. This\n\nsection is normative.\n\n• Section 5 describes requirements for session management. This section is\n\nnormative.",
+      "score_0_to_2": 2,
+      "reason": "The terminology and section map are understandable; the section map is complete."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 14,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "3f1df332b5f2b58e4a1d70c80c63fc8acee6a56e2c4d55b047b4cf493ef80778",
+      "chunk_text": "– The terms “ MAY ” and “ NEED NOT ” indicate a course of action permissible\n\nwithin the limits of the publication.\n\n– The terms “ CAN ” and “ CANNOT ” indicate a possibility and capability —\n\nwhether material, physical, or causal — or, in the negative, the absence of that possibility or capability. 1.2. Document Structure This document is organized as follows. Each section is labeled as either normative (i.e., mandatory for compliance) or informative (i.e., not mandatory).\n\n• Section 1 introduces the document. This section is informative.\n\n• Section 2 describes requirements for AALs. This section is normative.\n\n• Section 3 describes authenticator and verifier requirements. This section is\n\nnormative.\n\n• Section 4 describes requirements for authenticator event management. This\n\nsection is normative.\n\n• Section 5 describes requirements for session management. This section is\n\nnormative.",
+      "score_0_to_2": 2,
+      "reason": "Same paragraph-aware chunk as B; the terminology and section map are complete."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 15,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "662ae5804f166e7cd287f9e5028413bcdd471f290db68f853cd5d3b0ecd7e970",
+      "chunk_text": "2. Authentication Assurance Levels\n\nThis section is normative. To satisfy the requirements of a given AAL and be recognized as a subscriber, a claimant SHALL authenticate to an RP (or IdP, as described in [SP800-63C]) with a process whose strength is equal to or greater than the requirements at that level. The authentication process results in an identifier that uniquely identifies the subscriber each time they authenticate to that RP. The identifier MAY be pseudonymous. Other attributes that identify the subscriber as a unique subject MAY also be provided. Detailed normative requirements for authenticators and verifiers at each AAL are provided in Sec. 3. See [SP800-63] Sec. 3 for details",
+      "score_0_to_2": 1,
+      "reason": "The normative AAL context is clear; the last sentence is cut before its explanation."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 15,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "fe18f3e627ba03234180d5b84a7cb3244d00191e843ad8f116e864be7be130ba",
+      "chunk_text": "2. Authentication Assurance Levels\n\nThis section is normative. To satisfy the requirements of a given AAL and be recognized as a subscriber, a claimant SHALL authenticate to an RP (or IdP, as described in [SP800-63C]) with a process whose strength is equal to or greater than the requirements at that level. The authentication process results in an identifier that uniquely identifies the subscriber each time they authenticate to that RP. The identifier MAY be pseudonymous. Other attributes that identify the subscriber as a unique subject MAY also be provided. Detailed normative requirements for authenticators and verifiers at each AAL are provided in Sec. 3. See [SP800-63] Sec. 3 for details on how to choose the most appropriate AAL. Personal information collected during and after identity proofing (see [SP800-63A]) MAY be made available to the subscriber by the digital identity service",
+      "score_0_to_2": 1,
+      "reason": "The AAL context is coherent, but a sentence continues beyond the chunk boundary."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 15,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "fe18f3e627ba03234180d5b84a7cb3244d00191e843ad8f116e864be7be130ba",
+      "chunk_text": "2. Authentication Assurance Levels\n\nThis section is normative. To satisfy the requirements of a given AAL and be recognized as a subscriber, a claimant SHALL authenticate to an RP (or IdP, as described in [SP800-63C]) with a process whose strength is equal to or greater than the requirements at that level. The authentication process results in an identifier that uniquely identifies the subscriber each time they authenticate to that RP. The identifier MAY be pseudonymous. Other attributes that identify the subscriber as a unique subject MAY also be provided. Detailed normative requirements for authenticators and verifiers at each AAL are provided in Sec. 3. See [SP800-63] Sec. 3 for details on how to choose the most appropriate AAL. Personal information collected during and after identity proofing (see [SP800-63A]) MAY be made available to the subscriber by the digital identity service",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; a sentence continues beyond the boundary."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 16,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "953c44830bd236eb2305e7d9256bfa007b50535c494cc6ebab9a0c0904114125",
+      "chunk_text": "2.1.1. Permitted Authenticator Types AAL1 authentication SHALL use any of the following authentication types, which are further defined in Sec. 3:\n\n• Password (Sec. 3.1.1): A memorizable secret typically chosen by the subscriber\n\n• Look-up secret (Sec. 3.1.2): A secret determined by the claimant by looking up a\n\nprompted value in a list held by the subscriber\n\n• Out-of-band device (Sec. 3.1.3): A secret sent or received through a separate\n\ncommunication channel with the subscriber\n\n• Single-factor one-time password (OTP) (Sec. 3.1.4): A one-time secret obtained\n\nfrom a device or application held by the subscriber\n\n• Multi-factor OTP (Sec. 3.1.5): A one-time secret obtained from a device\n\nor",
+      "score_0_to_2": 1,
+      "reason": "The AAL1 list is understandable but ends in the middle of a bullet."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 16,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "ef8165ef7252f693bb8affbf44c5902ce814e9bad76ee444c51bd06604597c6e",
+      "chunk_text": "2.1.1. Permitted Authenticator Types AAL1 authentication SHALL use any of the following authentication types, which are further defined in Sec. 3:\n\n• Password (Sec. 3.1.1): A memorizable secret typically chosen by the subscriber\n\n• Look-up secret (Sec. 3.1.2): A secret determined by the claimant by looking up a\n\nprompted value in a list held by the subscriber\n\n• Out-of-band device (Sec. 3.1.3): A secret sent or received through a separate\n\ncommunication channel with the subscriber\n\n• Single-factor one-time password (OTP) (Sec. 3.1.4): A one-time secret obtained\n\nfrom a device or application held by the subscriber\n\n• Multi-factor OTP (Sec. 3.1.5): A one-time secret obtained from a device\n\nor application held by the subscriber that requires activation by a second authentication factor\n\n• Single-factor cryptographic authentication (Sec. 3.1.6): Proof of possession",
+      "score_0_to_2": 1,
+      "reason": "Most of the AAL1 list is readable, but the final bullet is incomplete."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 16,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "ef8165ef7252f693bb8affbf44c5902ce814e9bad76ee444c51bd06604597c6e",
+      "chunk_text": "2.1.1. Permitted Authenticator Types AAL1 authentication SHALL use any of the following authentication types, which are further defined in Sec. 3:\n\n• Password (Sec. 3.1.1): A memorizable secret typically chosen by the subscriber\n\n• Look-up secret (Sec. 3.1.2): A secret determined by the claimant by looking up a\n\nprompted value in a list held by the subscriber\n\n• Out-of-band device (Sec. 3.1.3): A secret sent or received through a separate\n\ncommunication channel with the subscriber\n\n• Single-factor one-time password (OTP) (Sec. 3.1.4): A one-time secret obtained\n\nfrom a device or application held by the subscriber\n\n• Multi-factor OTP (Sec. 3.1.5): A one-time secret obtained from a device\n\nor application held by the subscriber that requires activation by a second authentication factor\n\n• Single-factor cryptographic authentication (Sec. 3.1.6): Proof of possession",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; the final AAL1 list item is incomplete."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 17,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "761435b6ec69dd20fae6cfe381fc8a16f550af57f2b8b02f23e546d1e94903dc",
+      "chunk_text": "Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. A definite reauthentication overall timeout SHALL be established, which SHOULD be no more than 30 days at AAL1. An inactivity timeout MAY be applied but is not required at AAL1. 2.2. Authentication Assurance Level 2 AAL2 provides high confidence that the claimant controls one or more authenticators that are bound to the subscriber account. Proof of possession and control of two distinct authentication factors through the use of secure authentication protocols is required. Approved cryptographic techniques are required. 2.2.1. Permitted Authenticator Types At AAL2, authentication SHALL use either a",
+      "score_0_to_2": 1,
+      "reason": "The AAL1 timeout and AAL2 heading are readable, but the next clause is cut."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 17,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "e18c1e871c25a9555b61fdb246eed777b4e0efe177fc6d8677fed6314e46fb91",
+      "chunk_text": "Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. A definite reauthentication overall timeout SHALL be established, which SHOULD be no more than 30 days at AAL1. An inactivity timeout MAY be applied but is not required at AAL1. 2.2. Authentication Assurance Level 2 AAL2 provides high confidence that the claimant controls one or more authenticators that are bound to the subscriber account. Proof of possession and control of two distinct authentication factors through the use of secure authentication protocols is required. Approved cryptographic techniques are required. 2.2.1. Permitted Authenticator Types At AAL2, authentication SHALL use either a multi-factor authenticator or a combination of two separate authentication factors. A multi-factor authenticator requires two factors to execute a single authentication event, such as a",
+      "score_0_to_2": 1,
+      "reason": "The requirements are clear until the next permitted-types clause is truncated."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 17,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "e18c1e871c25a9555b61fdb246eed777b4e0efe177fc6d8677fed6314e46fb91",
+      "chunk_text": "Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. A definite reauthentication overall timeout SHALL be established, which SHOULD be no more than 30 days at AAL1. An inactivity timeout MAY be applied but is not required at AAL1. 2.2. Authentication Assurance Level 2 AAL2 provides high confidence that the claimant controls one or more authenticators that are bound to the subscriber account. Proof of possession and control of two distinct authentication factors through the use of secure authentication protocols is required. Approved cryptographic techniques are required. 2.2.1. Permitted Authenticator Types At AAL2, authentication SHALL use either a multi-factor authenticator or a combination of two separate authentication factors. A multi-factor authenticator requires two factors to execute a single authentication event, such as a",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; the next permitted-types clause is truncated."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 18,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "e29e00a0e1e74afbd109b7efe2ff3b437683109eb5620124189c64e4c8579015",
+      "chunk_text": "A biometric characteristic is not recognized as an authenticator by itself. Section 3.2.3 requires a physical authenticator to be authenticated along with a biometric comparison. The physical authenticator then serves as “something you have,” while the biometric match serves as “something you are.” When a biometric comparison is used as an activation factor for a multi-factor authenticator, the authenticator itself serves as the physical authenticator. As noted in that section, local verification of biometric factors (i.e., the use of a multi-factor authenticator with a biometric comparison as an activation factor) is preferred over central biometric factor comparison. 2.2.2. Authenticator",
+      "score_0_to_2": 1,
+      "reason": "The biometric paragraph is coherent; the following heading is truncated."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 18,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "d51ee7d42ac029bff65c29980e43d62fb727b5f79c2886570d26b3af9032686e",
+      "chunk_text": "A biometric characteristic is not recognized as an authenticator by itself. Section 3.2.3 requires a physical authenticator to be authenticated along with a biometric comparison. The physical authenticator then serves as “something you have,” while the biometric match serves as “something you are.” When a biometric comparison is used as an activation factor for a multi-factor authenticator, the authenticator itself serves as the physical authenticator. As noted in that section, local verification of biometric factors (i.e., the use of a multi-factor authenticator with a biometric comparison as an activation factor) is preferred over central biometric factor comparison. 2.2.2. Authenticator and Verifier Requirements Authenticators used at AAL2 SHALL use approved cryptography. Cryptographic authenticators procured by federal agencies SHALL be validated to meet the requirements of [FIPS140]",
+      "score_0_to_2": 1,
+      "reason": "The biometric explanation is complete; the following AAL2 requirements are cut."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 18,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "d51ee7d42ac029bff65c29980e43d62fb727b5f79c2886570d26b3af9032686e",
+      "chunk_text": "A biometric characteristic is not recognized as an authenticator by itself. Section 3.2.3 requires a physical authenticator to be authenticated along with a biometric comparison. The physical authenticator then serves as “something you have,” while the biometric match serves as “something you are.” When a biometric comparison is used as an activation factor for a multi-factor authenticator, the authenticator itself serves as the physical authenticator. As noted in that section, local verification of biometric factors (i.e., the use of a multi-factor authenticator with a biometric comparison as an activation factor) is preferred over central biometric factor comparison. 2.2.2. Authenticator and Verifier Requirements Authenticators used at AAL2 SHALL use approved cryptography. Cryptographic authenticators procured by federal agencies SHALL be validated to meet the requirements of [FIPS140]",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; the following AAL2 requirements are cut."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 19,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "d1372e1ef7040fbeb6b6882c7e5c1645c42bc5fb32db79a53ce935e8cbb29caf",
+      "chunk_text": "2.3. Authentication Assurance Level 3 AAL3 provides very high confidence that the claimant controls authenticators that are bound to the subscriber account. Authentication at AAL3 is based on the proof of possession of a key through the use of a cryptographic protocol along with either an activation factor or a password. AAL3 authentication requires the use of a cryptographic authenticator with a non-exportable private key that provides phishing resistance. Approved cryptographic techniques are required. 2.3.1. Permitted Authenticator Types AAL3 authentication SHALL require one of the following authenticator combinations:\n\n• Multi-factor cryptographic authentication (Sec. 3.1.7)\n\n•",
+      "score_0_to_2": 1,
+      "reason": "The AAL3 description is clear, but the authenticator-combination list is incomplete."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 19,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "21526d421d4c3d0125b8e0ad8822b57ec54f9aa3cf146bc44893a64c39adeac2",
+      "chunk_text": "2.3. Authentication Assurance Level 3 AAL3 provides very high confidence that the claimant controls authenticators that are bound to the subscriber account. Authentication at AAL3 is based on the proof of possession of a key through the use of a cryptographic protocol along with either an activation factor or a password. AAL3 authentication requires the use of a cryptographic authenticator with a non-exportable private key that provides phishing resistance. Approved cryptographic techniques are required. 2.3.1. Permitted Authenticator Types AAL3 authentication SHALL require one of the following authenticator combinations:\n\n• Multi-factor cryptographic authentication (Sec. 3.1.7)\n\n• Single-factor cryptographic authentication (Sec. 3.1.6) used in conjunction with",
+      "score_0_to_2": 1,
+      "reason": "The AAL3 requirements are understandable, but the combination list is incomplete."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 19,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "21526d421d4c3d0125b8e0ad8822b57ec54f9aa3cf146bc44893a64c39adeac2",
+      "chunk_text": "2.3. Authentication Assurance Level 3 AAL3 provides very high confidence that the claimant controls authenticators that are bound to the subscriber account. Authentication at AAL3 is based on the proof of possession of a key through the use of a cryptographic protocol along with either an activation factor or a password. AAL3 authentication requires the use of a cryptographic authenticator with a non-exportable private key that provides phishing resistance. Approved cryptographic techniques are required. 2.3.1. Permitted Authenticator Types AAL3 authentication SHALL require one of the following authenticator combinations:\n\n• Multi-factor cryptographic authentication (Sec. 3.1.7)\n\n• Single-factor cryptographic authentication (Sec. 3.1.6) used in conjunction with",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; the combination list is incomplete."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 20,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "ee1965ba5167f9a23e55d9904959b7e9170325a570584899fce1c42596b7ba5f",
+      "chunk_text": "extracted. Since syncable authenticators (described in Appendix B) require the private key to be exportable, syncable authenticators SHALL NOT be used at AAL3. Cryptography used by verifiers at AAL3 SHALL be validated at [FIPS140] Level 1 or higher. Hardware-based authenticators and verifiers at AAL3 SHOULD resist relevant side- channel (e.g., timing and power-consumption analysis) attacks. 2.3.3. Reauthentication Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. At AAL3, the overall timeout for reauthentication SHALL be no more than 12 hours. The inactivity timeout SHOULD be no more than 15 minutes. Unlike AAL2, AAL3 reauthentication requirements",
+      "score_0_to_2": 1,
+      "reason": "A PDF continuation fragment appears at the start and the final AAL3 clause is cut."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 20,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "e06f606ef19396b2e9e4d53998e677e7ee89bea3582936432c7a7cf7637cbe58",
+      "chunk_text": "extracted. Since syncable authenticators (described in Appendix B) require the private key to be exportable, syncable authenticators SHALL NOT be used at AAL3. Cryptography used by verifiers at AAL3 SHALL be validated at [FIPS140] Level 1 or higher. Hardware-based authenticators and verifiers at AAL3 SHOULD resist relevant side- channel (e.g., timing and power-consumption analysis) attacks. 2.3.3. Reauthentication Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. At AAL3, the overall timeout for reauthentication SHALL be no more than 12 hours. The inactivity timeout SHOULD be no more than 15 minutes. Unlike AAL2, AAL3 reauthentication requirements are the same as for initial authentication at AAL3. 2.4. General Requirements The following requirements apply to authentication at all AALs. 2.4.1. Security Controls The verifier SHALL employ",
+      "score_0_to_2": 1,
+      "reason": "The AAL3 timeout passage is clear; the general-controls passage is cut."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 20,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "e06f606ef19396b2e9e4d53998e677e7ee89bea3582936432c7a7cf7637cbe58",
+      "chunk_text": "extracted. Since syncable authenticators (described in Appendix B) require the private key to be exportable, syncable authenticators SHALL NOT be used at AAL3. Cryptography used by verifiers at AAL3 SHALL be validated at [FIPS140] Level 1 or higher. Hardware-based authenticators and verifiers at AAL3 SHOULD resist relevant side- channel (e.g., timing and power-consumption analysis) attacks. 2.3.3. Reauthentication Periodic reauthentication of subscriber sessions SHALL be performed, as described in Sec. 5.2. At AAL3, the overall timeout for reauthentication SHALL be no more than 12 hours. The inactivity timeout SHOULD be no more than 15 minutes. Unlike AAL2, AAL3 reauthentication requirements are the same as for initial authentication at AAL3. 2.4. General Requirements The following requirements apply to authentication at all AALs. 2.4.1. Security Controls The verifier SHALL employ",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; the general-controls passage is cut."
+    },
+    {
+      "strategy": "A",
+      "source_page_physical": 21,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "958856303bda7fca954db47bd0576b33f9fe0529c0704410078b8fc7472bb78e",
+      "chunk_text": "subscriber consent, and enabling the selective use or disclosure of attributes. When CSPs or IdPs use consent measures, they SHALL NOT make consent for the additional processing a condition of the identity service. Regardless of whether the CSP or IdP is an agency or private-sector provider, the following requirements apply to federal agencies that offer or use the authentication service:\n\n1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) and\n\nconduct an analysis to determine whether the collection of personal information to issue or maintain authenticators triggers the requirements of the Privacy Act of 1974 [PrivacyAct] (see Sec. 7.4).\n\n2. The agency SHALL",
+      "score_0_to_2": 1,
+      "reason": "The privacy requirements begin mid-page and end inside a numbered requirement."
+    },
+    {
+      "strategy": "B",
+      "source_page_physical": 21,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "d630523746cd2e138c175cfef6eade97ad6d49d179f2e6f953ef6a66e34cee8c",
+      "chunk_text": "subscriber consent, and enabling the selective use or disclosure of attributes. When CSPs or IdPs use consent measures, they SHALL NOT make consent for the additional processing a condition of the identity service. Regardless of whether the CSP or IdP is an agency or private-sector provider, the following requirements apply to federal agencies that offer or use the authentication service:\n\n1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) and\n\nconduct an analysis to determine whether the collection of personal information to issue or maintain authenticators triggers the requirements of the Privacy Act of 1974 [PrivacyAct] (see Sec. 7.4).\n\n2. The agency SHALL publish a System of Records Notice (SORN) to cover such\n\ncollections, as applicable.\n\n3. The agency SHALL consult with its SAOP and conduct an analysis to determine",
+      "score_0_to_2": 1,
+      "reason": "The privacy context is readable, but a numbered requirement continues beyond it."
+    },
+    {
+      "strategy": "C",
+      "source_page_physical": 21,
+      "sample_location": "first content chunk on the page",
+      "chunk_id": "d630523746cd2e138c175cfef6eade97ad6d49d179f2e6f953ef6a66e34cee8c",
+      "chunk_text": "subscriber consent, and enabling the selective use or disclosure of attributes. When CSPs or IdPs use consent measures, they SHALL NOT make consent for the additional processing a condition of the identity service. Regardless of whether the CSP or IdP is an agency or private-sector provider, the following requirements apply to federal agencies that offer or use the authentication service:\n\n1. The agency SHALL consult with their Senior Agency Official for Privacy (SAOP) and\n\nconduct an analysis to determine whether the collection of personal information to issue or maintain authenticators triggers the requirements of the Privacy Act of 1974 [PrivacyAct] (see Sec. 7.4).\n\n2. The agency SHALL publish a System of Records Notice (SORN) to cover such\n\ncollections, as applicable.\n\n3. The agency SHALL consult with its SAOP and conduct an analysis to determine",
+      "score_0_to_2": 1,
+      "reason": "Same paragraph-aware chunk as B; a numbered requirement continues beyond it."
+    }
+  ],
+  "grounding_summary": {
+    "A": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 0,
+      "score_2": 5,
+      "mean": 2.0
+    },
+    "B": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 2,
+      "score_2": 3,
+      "mean": 1.6
+    },
+    "C": {
+      "count": 5,
+      "score_0": 0,
+      "score_1": 1,
+      "score_2": 4,
+      "mean": 1.8
+    }
+  },
+  "grounding_rows": [
+    {
+      "strategy": "A",
+      "question_id": "q16",
+      "question": "What minimum false match rate must the biometric system meet for all demographic groups?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the requested one-in-10,000 FMR threshold.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "25d53a61f5b346751e5c1e1049eb1a0eef6eb55b8323d6426b8293fef257aabc",
+          "page": 42
+        },
+        {
+          "rank": 2,
+          "chunk_id": "9cd8c06dd1f9f59a60f4798f4bbdb412f9cc9562fa983e13cc191a393d2eb082",
+          "page": 43
+        },
+        {
+          "rank": 3,
+          "chunk_id": "f0f0bb2c4360c16a356f75043e6bd0999c82bea5fad14c8bd9e3f778b2df73ec",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "question_id": "q16",
+      "question": "What minimum false match rate must the biometric system meet for all demographic groups?",
+      "score_0_to_2": 1,
+      "reason": "Top-3 discusses biometric error rates but misses the requested FMR threshold.",
+      "evidence_hit3_automatic": false,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "0aa62c63437ffaec6794dfe61c4f7bc4a1de28d1c5966a98f616662ce02e2a6e",
+          "page": 42
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ef50209edc7105b37916160be9110d2ff01b928e1b1bcb184a39be833d794aeb",
+          "page": 42
+        },
+        {
+          "rank": 3,
+          "chunk_id": "568e46bf512012b967f0ea86262c20d0191f5c98928a8dc3559aa02d524121b4",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "question_id": "q16",
+      "question": "What minimum false match rate must the biometric system meet for all demographic groups?",
+      "score_0_to_2": 1,
+      "reason": "Filtered top-3 discusses FMR but misses the requested one-in-10,000 threshold.",
+      "evidence_hit3_automatic": false,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "0aa62c63437ffaec6794dfe61c4f7bc4a1de28d1c5966a98f616662ce02e2a6e",
+          "page": 42
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ef50209edc7105b37916160be9110d2ff01b928e1b1bcb184a39be833d794aeb",
+          "page": 42
+        },
+        {
+          "rank": 3,
+          "chunk_id": "568e46bf512012b967f0ea86262c20d0191f5c98928a8dc3559aa02d524121b4",
+          "page": 43
+        }
+      ]
+    },
+    {
+      "strategy": "A",
+      "question_id": "q17",
+      "question": "In section 4, how must the subscriber be notified when a new authenticator is bound?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the independent-notification requirement for a new binding.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "1e61316c5e014a5d38f748586909ebfd004dcae97a08a7e61a82d8a4175f497d",
+          "page": 54
+        },
+        {
+          "rank": 2,
+          "chunk_id": "c167a5255665c69a3c8a3724ee5bc7453109db9c08196d43d24907b33a3d2173",
+          "page": 57
+        },
+        {
+          "rank": 3,
+          "chunk_id": "c6ddceedbacd7ba38847182f725139786878cbee8f5bd773cda1062ca070e8ed",
+          "page": 55
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "question_id": "q17",
+      "question": "In section 4, how must the subscriber be notified when a new authenticator is bound?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the independent-notification requirement for a new binding.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "6c92af3b145ed46cd8e88c1dd28242bf156bce78ca489ae5ccad323aaa19bb8e",
+          "page": 54
+        },
+        {
+          "rank": 2,
+          "chunk_id": "97dcc18e99fb78e73e0fd3b954f75a7bc70d3cae5a0e6017931ee9cad3fefed9",
+          "page": 57
+        },
+        {
+          "rank": 3,
+          "chunk_id": "011afe4a49c6c377231284b59ff2d8ffe2aabe589a5d5b02a0d089f443387b78",
+          "page": 55
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "question_id": "q17",
+      "question": "In section 4, how must the subscriber be notified when a new authenticator is bound?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the independent-notification requirement for a new binding.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "6c92af3b145ed46cd8e88c1dd28242bf156bce78ca489ae5ccad323aaa19bb8e",
+          "page": 54
+        },
+        {
+          "rank": 2,
+          "chunk_id": "97dcc18e99fb78e73e0fd3b954f75a7bc70d3cae5a0e6017931ee9cad3fefed9",
+          "page": 57
+        },
+        {
+          "rank": 3,
+          "chunk_id": "011afe4a49c6c377231284b59ff2d8ffe2aabe589a5d5b02a0d089f443387b78",
+          "page": 55
+        }
+      ]
+    },
+    {
+      "strategy": "A",
+      "question_id": "q18",
+      "question": "In section 5, what actions should the RP take when potential fraud is detected during a session?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains all three recommended responses to detected session fraud.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "6a5bd0e607ec09b421635bfcddbec33cb0f02f57f560c8359974af7dc081c889",
+          "page": 68
+        },
+        {
+          "rank": 2,
+          "chunk_id": "e44becd90fe2db2a6f828294d8ed0843372c7e11e5cd93d1b662485d32405a51",
+          "page": 48
+        },
+        {
+          "rank": 3,
+          "chunk_id": "e84f86ee5e910bc27cf286f6a312346cf3212cd64536a0adc0feb18f51bdc599",
+          "page": 61
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "question_id": "q18",
+      "question": "In section 5, what actions should the RP take when potential fraud is detected during a session?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains all three recommended responses to detected session fraud.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "8a23230abdf8970ba8eaef9701fc7665365393fd764eb143aaf42dd6b09d0378",
+          "page": 68
+        },
+        {
+          "rank": 2,
+          "chunk_id": "14b1d098e83a060dcc8be897345ea28eb18f7e9973d8028fb3974f2a6d226fdd",
+          "page": 48
+        },
+        {
+          "rank": 3,
+          "chunk_id": "5f955fc893db35941462d7332fcdb1f21be57b6cc97a5a8690e8074b66423762",
+          "page": 62
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "question_id": "q18",
+      "question": "In section 5, what actions should the RP take when potential fraud is detected during a session?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains all three recommended responses to detected session fraud.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "8a23230abdf8970ba8eaef9701fc7665365393fd764eb143aaf42dd6b09d0378",
+          "page": 68
+        },
+        {
+          "rank": 2,
+          "chunk_id": "9c426c064a24669d93e23d04ca771c443f2b81c3a7a3ab2b3a3973bcb8d889d0",
+          "page": 67
+        },
+        {
+          "rank": 3,
+          "chunk_id": "9a5d34132d5f0d62812124c9bd636e2f4725964e9f36bed4d346fe14c7af37e4",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "strategy": "A",
+      "question_id": "q19",
+      "question": "In section 8, what should users be prompted to do shortly before an inactivity timeout?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the requested prompt to act before the inactivity timeout.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "2a98bf57c4a5706563b268e645398383bc20e7b053fe577bb745ddacdadeca79",
+          "page": 82
+        },
+        {
+          "rank": 2,
+          "chunk_id": "57ba317e12f346ee0beb7af3e271db1c4fdd41ed057a2afb1264fc3dd95b8e60",
+          "page": 16
+        },
+        {
+          "rank": 3,
+          "chunk_id": "372ecaf3fe528742bc7825bb42f48689177349d0d5b24dbd46f054c6aaf30e04",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "question_id": "q19",
+      "question": "In section 8, what should users be prompted to do shortly before an inactivity timeout?",
+      "score_0_to_2": 1,
+      "reason": "Top-3 retrieves timeout definitions, but not the requested user prompt.",
+      "evidence_hit3_automatic": false,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "b5ead3b40104660c6112c9ae9f7a961f5c42de4680be65f718900ee938e7e489",
+          "page": 16
+        },
+        {
+          "rank": 2,
+          "chunk_id": "a71d484bb21d5fef1b26b4480a50a698424c9cf06cc1b2c57176113229528d01",
+          "page": 67
+        },
+        {
+          "rank": 3,
+          "chunk_id": "052d8e215f43949cc4e2c716cb8a5013d7d48e9a774d21dee3599b7d74c66da1",
+          "page": 67
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "question_id": "q19",
+      "question": "In section 8, what should users be prompted to do shortly before an inactivity timeout?",
+      "score_0_to_2": 2,
+      "reason": "Filtered top-3 contains the requested prompt before an inactivity timeout.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "d3f7d683a8960ebab0fe7309b694072515882479be5adff05f910e4b7121145c",
+          "page": 82
+        },
+        {
+          "rank": 2,
+          "chunk_id": "ff6e2b51774624fcec5ca7b96e01adb93dda70106d94531e64cba99b73862d38",
+          "page": 82
+        },
+        {
+          "rank": 3,
+          "chunk_id": "1f18cc0d3fdd11d571e5b3000241af13413c95f618bd6d92b889846b015fb436",
+          "page": 87
+        }
+      ]
+    },
+    {
+      "strategy": "A",
+      "question_id": "q20",
+      "question": "In section 4, what must a CSP do to recover an account at AAL3 when the account was identity-proofed at IAL3?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the required AAL3 biometric comparison and collection context.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "a30aed7ab3d727970ace8bc63494a7e4da112522cf514d652d8f22b4ee8c85ae",
+          "page": 60
+        },
+        {
+          "rank": 2,
+          "chunk_id": "3a6327db8bfb595ced0bbc71054e7f6d27ee0cd7ac84d843af20b11084c7c93a",
+          "page": 61
+        },
+        {
+          "rank": 3,
+          "chunk_id": "0c3ab678319a2ddfed9c7c72181ec6528e46a328dc49cedf14261df81f0d209e",
+          "page": 60
+        }
+      ]
+    },
+    {
+      "strategy": "B",
+      "question_id": "q20",
+      "question": "In section 4, what must a CSP do to recover an account at AAL3 when the account was identity-proofed at IAL3?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the required AAL3 biometric comparison and collection context.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb99ea47ebecc07f3f1e39ae96b3b4cf8babf9e4dc79baef5087d0f7ccbec273",
+          "page": 61
+        },
+        {
+          "rank": 2,
+          "chunk_id": "1ea58285bb550c9f2fb40ad54a02b2fef2b99f24d46fff649321b47180b00ab2",
+          "page": 60
+        },
+        {
+          "rank": 3,
+          "chunk_id": "7627dfe20745e746c20b208855cba1290d393173fa2c492db4e68fd22015fe8d",
+          "page": 60
+        }
+      ]
+    },
+    {
+      "strategy": "C",
+      "question_id": "q20",
+      "question": "In section 4, what must a CSP do to recover an account at AAL3 when the account was identity-proofed at IAL3?",
+      "score_0_to_2": 2,
+      "reason": "Top-3 contains the required AAL3 biometric comparison and collection context.",
+      "evidence_hit3_automatic": true,
+      "trace_ranks": [
+        {
+          "rank": 1,
+          "chunk_id": "fb99ea47ebecc07f3f1e39ae96b3b4cf8babf9e4dc79baef5087d0f7ccbec273",
+          "page": 61
+        },
+        {
+          "rank": 2,
+          "chunk_id": "1ea58285bb550c9f2fb40ad54a02b2fef2b99f24d46fff649321b47180b00ab2",
+          "page": 60
+        },
+        {
+          "rank": 3,
+          "chunk_id": "7627dfe20745e746c20b208855cba1290d393173fa2c492db4e68fd22015fe8d",
+          "page": 60
+        }
+      ]
+    }
+  ],
+  "metadata_audit": "metadata_audit.json",
+  "retrieval_trace": "traces.jsonl"
+}

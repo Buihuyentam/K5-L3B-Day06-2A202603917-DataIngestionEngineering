@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-11-14T05:40:20.386915+00:00",
+  "split_run": "test",
+  "benchmark_split_counts": {
+    "dev": 15,
+    "test": 5
+  },
+  "source_sha256": "d9ab89576b5ae2cfb3ba37781110788dea27a85a5079496dbfc1a79834670afd",
+  "source_content_pages": 98,
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "document_probe_dimensions": 384,
+  "query_probe_dimensions": 384,
+  "query_document_encoder": "same MiniLM encoder and mean pooling; no query prefix",
+  "embedding_cost_usd": 0.0,
+  "vector_store": "PostgreSQL + pgvector, exact cosine distance (<=>)",
+  "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+  "pgvector": "0.8.7",
+  "python": "3.11.9",
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "chunk_count": 403,
+      "chunk_chars": 253248,
+      "mean_chunk_chars": 628.41,
+      "embedding_seconds": 37.581,
+      "ingest_and_index_seconds": 39.847,
+      "embedding_cost_usd": 0.0,
+      "records_before": 403,
+      "records_after_first_upsert": 403,
+      "records_after_repeat_upsert": 403,
+      "idempotent_reingest": true,
+      "embedding_vectors_reused": 0
+    },
+    "B": {
+      "chunking": "paragraph",
+      "chunk_count": 316,
+      "chunk_chars": 222514,
+      "mean_chunk_chars": 704.16,
+      "embedding_seconds": 57.656,
+      "ingest_and_index_seconds": 59.402,
+      "embedding_cost_usd": 0.0,
+      "records_before": 316,
+      "records_after_first_upsert": 316,
+      "records_after_repeat_upsert": 316,
+      "idempotent_reingest": true,
+      "embedding_vectors_reused": 3
+    },
+    "C": {
+      "chunking": "paragraph+filter",
+      "chunk_count": 316,
+      "chunk_chars": 222514,
+      "mean_chunk_chars": 704.16,
+      "embedding_seconds": 0.0,
+      "ingest_and_index_seconds": 0.962,
+      "embedding_cost_usd": 0.0,
+      "records_before": 316,
+      "records_after_first_upsert": 316,
+      "records_after_repeat_upsert": 316,
+      "idempotent_reingest": true,
+      "embedding_vectors_reused": 316
+    }
+  },
+  "trace_file": "results/traces.jsonl",
+  "selected_strategy_before_test": "C"
+}

@@ -1,4 +1,4 @@
-strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+run_date,strategy,chunking,chunk_size_chars,overlap_chars,metadata,filter,embedding_model,dimensions,chunk_count,embedding_seconds,ingest_index_seconds,embedding_cost_usd,dev_hit1,dev_evidence_hit3,test_v2_hit1,test_v2_evidence_hit3,selected_on_dev,notes
+2026-11-14,A,fixed,700,100,"source_id,source,page,section",none,sentence-transformers/all-MiniLM-L6-v2,384,403,31.059,32.818,0.0,4/15,9/15,2/5,5/5,false,"Pilot v1 test was inspected; corrected v2 is exploratory, not an independent holdout."
+2026-11-14,B,paragraph,900,0,"source_id,source,page,section",none,sentence-transformers/all-MiniLM-L6-v2,384,311,32.867,34.454,0.0,9/15,12/15,2/5,3/5,false,"Paragraph-aware chunks match C; v2 test is exploratory, not an independent holdout."
+2026-11-14,C,paragraph,900,0,"source_id,source,page,section","question.section",sentence-transformers/all-MiniLM-L6-v2,384,311,0.000,1.121,0.0,9/15,13/15,3/5,4/5,true,"Dev winner; reused B's 311 vectors so 1.121 s is incremental indexing, not standalone embedding time. Test v2 is exploratory."

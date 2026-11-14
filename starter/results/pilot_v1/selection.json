@@ -1,0 +1,6 @@
+{
+  "selected_at": "2026-11-14 (before test run)",
+  "strategy": "C",
+  "rationale": "On the fixed 15-question dev split, C achieved Evidence Hit@3 12/15 versus B 11/15 and A 9/15. C tied B on Hit@1 (9/15), and B-C changes only application of the question-provided section filter. This selection uses no test retrieval results.",
+  "criterion": "Highest dev Evidence Hit@3; Hit@1 as tie-breaker; see benchmark/selection_criteria.md."
+}
